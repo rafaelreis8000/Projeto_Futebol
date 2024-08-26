@@ -4,7 +4,7 @@ def main(page: ft.Page):                    #define uma página/ tela principal
     page.title = 'FuteVale'
 
     page.window_width = 500
-    page.bgcolor = '#C1BCAC'                #configura o tamanho e as cores da tela
+    page.bgcolor = '#214E34'                #configura o tamanho e as cores da tela
 
     txt_titulo = ft.Text('Nome do Time: ')
     NomeTime = ft.TextField(label='Digite o nome do time: ')

@@ -7,12 +7,15 @@ class Pessoa:
 class Clube:
     def __init__(self, nome):
         self.nome = nome
-        self.elenco = Elenco
+        self.elenco = Elenco()  # Inicializando um objeto do tipo Elenco
 
 class Elenco:
-    def __init__(self, nome):
-        self.nome = nome
-        self.jogadores = Jogador
+    def __init__(self):
+        self.jogadores = [] # Lista para armazenar objetos do tipo Jogador
+        self.comissao = []  # Lista para armazenar objetos do tipo Comissao
+
+    def adicionar_jogador(self, jogador):
+        self.jogadores.append(jogador)
 
 class Jogador(Pessoa):
     def __init__(self, nome, nascimento, sexo, altura, peso, lateralidade):
@@ -20,12 +23,8 @@ class Jogador(Pessoa):
         self.altura = altura
         self.peso = peso
         self.lateralidade = lateralidade
-    
 
 class Comissao(Pessoa):
     def __init__(self, nome, nascimento, sexo, cargo):
         super().__init__(nome, nascimento, sexo)
         self.cargo = cargo
-
-
- 

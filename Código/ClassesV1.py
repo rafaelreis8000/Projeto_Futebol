@@ -18,10 +18,11 @@ class Elenco:
         self.jogadores.append(jogador)
 
 class Jogador(Pessoa):
-    def __init__(self, nome, nascimento, sexo, altura, peso, lateralidade):
+    def __init__(self, nome, nascimento, sexo, altura, peso, posicao, lateralidade):
         super().__init__(nome, nascimento, sexo)
         self.altura = altura
         self.peso = peso
+        self.posicao = posicao
         self.lateralidade = lateralidade
 
 class Comissao(Pessoa):

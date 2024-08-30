@@ -1,0 +1,5 @@
+jogador= {
+    "nome": "",
+    "sobrenome": "",
+}
+

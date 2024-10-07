@@ -2,9 +2,12 @@ import flet as ft
 from cadastro_times import cadastrar_time
 from cadastro_jogadores import cadastrar_jogador
 from gerenciar_campeonato import criar_campeonato
-# Importe outros arquivos conforme necessário
+import db_setup
+import consultas
+# Import de arquivos
 
 def main(page: ft.Page):
+    db_setup.criar_banco_dados()
 
     # Função que recria o menu principal
     def main_menu():
@@ -13,8 +16,8 @@ def main(page: ft.Page):
             ft.Text("Menu Principal"),
             ft.ElevatedButton("Cadastrar Time", on_click=navegar_para_cadastro_time),
             ft.ElevatedButton("Cadastrar Jogador", on_click=navegar_para_cadastro_jogador),
-            ft.ElevatedButton("Gerenciar Campeonato", on_click=gerenciar_campeonato)
-            # Adicione mais botões conforme necessário
+            ft.ElevatedButton("Gerenciar Campeonato", on_click=gerenciar_campeonato),
+            ft.ElevatedButton("Consultar times", on_click=mostrar_times)
         )
         page.update()
 
@@ -32,6 +35,10 @@ def main(page: ft.Page):
     def gerenciar_campeonato(e):
         page.clean() # Limpa a tela
         cadastrar_jogador(page, main_menu) # Passa a função main_menu como callback
+
+    def mostrar_times(e):
+        page.clean()
+        consultas.listar_times()
 
     # Inicializa o menu principal
     main_menu()

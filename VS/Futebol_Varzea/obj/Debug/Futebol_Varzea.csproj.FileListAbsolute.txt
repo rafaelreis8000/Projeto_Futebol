@@ -1,5 +1,0 @@
-C:\Users\Bruno Blois\Documents\GitHub\Projeto_Futebol\VS\Futebol_Varzea\obj\Debug\Futebol_Varzea.csproj.AssemblyReference.cache
-C:\Users\Bruno Blois\Documents\GitHub\Projeto_Futebol\VS\Futebol_Varzea\obj\Debug\Futebol_Varzea.Form1.resources
-C:\Users\Bruno Blois\Documents\GitHub\Projeto_Futebol\VS\Futebol_Varzea\obj\Debug\Futebol_Varzea.Properties.Resources.resources
-C:\Users\Bruno Blois\Documents\GitHub\Projeto_Futebol\VS\Futebol_Varzea\obj\Debug\Futebol_Varzea.csproj.GenerateResource.cache
-C:\Users\Bruno Blois\Documents\GitHub\Projeto_Futebol\VS\Futebol_Varzea\obj\Debug\Futebol_Varzea.csproj.CoreCompileInputs.cache
